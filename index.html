@@ -12,15 +12,24 @@
     {
       "@context": "https://schema.org",
       "@type": "Offer",
-      "name": "Code promo Le Fourgon",
-      "description": "Obtenez 10€ de réduction sur votre première commande avec le code promo JD258958",
-      "url": "https://www.lefourgon.com",
+      "name": "10€ de réduction sur votre première commande avec Le Fourgon",
+      "description": "Profitez de 10€ de réduction sur votre première commande avec le code JD258958.",
+      "url": "https://codes-promo-le-fourgon.fr",
       "priceCurrency": "EUR",
-      "discountCode": "JD258958",
-      "discount": {
-        "@type": "Discount",
-        "discountValue": "10.00",
-        "discountCurrency": "EUR"
+      "price": "10",
+      "eligibleTransactionVolume": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "EUR",
+        "price": "10",
+        "eligibleTransactionVolume": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "EUR",
+          "price": "20",
+          "eligibleQuantity": {
+            "@type": "QuantitativeValue",
+            "value": 1
+          }
+        }
       },
       "validFrom": "2025-01-01",
       "validThrough": "2025-12-31",
@@ -30,7 +39,7 @@
         "name": "Le Fourgon",
         "url": "https://www.lefourgon.com"
       }
-    }
+    }      
     </script>
   <style>
     body {
